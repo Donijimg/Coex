@@ -1,0 +1,238 @@
+# edad=17
+# if edad>18
+#     print('eres mayor')
+# else:
+#     print('eres menor')
+# print("se definio tu suerte")
+
+# nota=3.7
+# if nota>=0 and nota<=5.0:
+#     if nota>=3.0:
+#         print('aprobo')
+
+
+
+
+
+
+# cat=input('digta tu categoria')
+# if cat=='a':
+#     pago=3000
+# elif cat=='b':
+#     pago=7000
+# elif cat=='c':
+#     pago=12000
+# else:
+#     pago=21000
+# print(pago)
+
+# Pepejunior=input('digita la edad de Pepejunior')
+# Agripino=input('digita la edad de Agripino')
+# if Pepejunior > Agripino:
+#     print('Pepejunior es mayor')
+# elif Agripino > Pepejunior:
+#     print('Agripino  es mayor')
+# else:
+#     print('no son los hijos de Pepe')
+
+
+# nuevosalarios=int(input('digita salario'))
+# """ if nuevosalarios>1200000:
+#     print(nuevosalarios*5/100)
+# elif nuevosalarios>=800000:
+#     print(nuevosalarios*8/100)
+# elif nuevosalarios>0:
+#     print(nuevosalarios*10/100)
+# else:
+#     print('salario incorrecto') """
+
+# """ print("auxilio de transporte")
+# salarioempleado= float(input("cuanto es el salario del empleado: "))
+# if(salarioempleado<=2320000):
+#     print("tiene derecho a auxilio de transporte")
+# else:
+#     print("no tiene derecho a auxilio de transporte") """
+
+
+# val1=int(input('digita el primer valor'))
+# val2=int(input('digita el segundo valor'))
+# operecion=int(input('''1. suma 
+# 2. resta 
+# 3. multiplicacion 
+# 4.divicion
+# escoge opcion: '''))
+# match operacion:
+#     case 1:
+#         print(val1+val2)
+#     case 2:
+#         print(val1-val2)
+#     case 3:
+#         print(val1*val2)
+#     case 4:
+#         print(val1*/100)
+#     case otro:
+#         print('error')
+
+# val1=int(input('digita el primer valor'))
+# val2=int(input('digita el segundo valor'))
+# operacion=int(input('''1. suma 
+# 2. resta 
+# 3. multiplicacion 
+# 4.divicion
+# escoge opcion: '''))
+# match operacion:
+#     case 1:
+#         print(val1+val2)
+#     case 2:
+#         print(val1-val2)
+#     case 3:
+#         print(val1*val2)
+#     case 4:
+#         if val2==0:
+#             print(val1*/100)
+#     case otro:
+#         print('error')
+
+        
+ factura=int(input('digita el valor'))
+ operacion=int(input('''1. estrato uno
+ 2. estrato dos
+ 3. estrato tres
+ 4.estrato cuatro
+ escoge opcion: '''))
+ match operacion:
+     case 1:
+         print(factura-(factura*10/100))
+     case 2:
+         print(factura-(factura*8/100))
+     case 3:
+         print(factura-(factura*6/100))
+     case 4:
+         print(factura-(factura*4/100))
+     case otro:
+         print('error')
+ 
+# cantidad=int(input('digita valor'))
+# precio=10000
+# if cantidad>=1000:
+#     descuento=(cantidad*precio*10/100)
+# elif cantidad>=500:
+#     descuento=(cantidad*precio*8/100)
+# elif cantidad>=200:
+#     descuento=(cantidad*precio*5/100)
+# else:
+#     print('valor incorrecto')
+# valortotal=(cantidad*precio-descuento )
+# print('valortotal')
+
+# """ meses=int(input('digita valor'))
+# deposito=1000
+# if meses>=24:
+#     ganacia=(deposito*18/12/100)
+# elif meses>=19:
+#     ganacia=(deposito*15/12/100)
+# elif meses>=13:
+#     ganacias=(deposito*12/12/100)
+# elif meses>=7:
+#     ganacia=(deposito*10/12/100)
+# elif meses<=6:
+#     ganacia=(deposito*8/12/100)
+# else:
+#     print ('error')
+# tasadeinteres=(meses*ganacia+deposito)
+# print (tasadeinteres) """
+
+
+# num1=int(input('digita el primer valor'))
+# num2=int(input('digita el segundo valor'))
+# num3=int(input('digita el tercer valor'))
+
+# if num1!=num2 and num1!=num3 and num2!=num3:
+#     if num1>num2 and num1>num3:
+#         print(num1)
+#     elif num2>num1 and num2>num3:
+#         print(num2)
+#     else:
+#         print(num3)
+
+# else:
+#     print('hay claves duplicados')
+
+# nota1=int(input('digita el primer valor'))
+# nota2=int(input('digita el segundo valor'))
+# nota3=int(input('digita el segundo valor'))
+# (nota1>=0 and nota1<=50)and (nota2>=0 and nota2<=50)and (nota3>=0 and nota2<=50)
+# prom=(nota1+nota2+nota3)/3
+# if prom>=50:
+#     print('aprobado')
+# else:
+#     print('no aprobado')
+
+# num1=int(input('digita el primer valor'))
+# num2=int(input('digita el primer valor'))
+# if num1%num2==0 or num2%num1==0:
+#     print(f'son mutiplos')
+# else:
+#     print(f'{num1}y{num2} no son multiplo')
+
+
+# """ 4.	En la universidad Buena Nota se requiere un algoritmo para calcular la nota definitiva y decidir si el estudiante aprueba o reprueba la asignatura. La nota final se obtiene a partir de dos notas parciales y un examen final, donde el primer parcial equivale al 30%, el segundo parcial al 30% y el examen final al 40%, y la nota mínima aprobatoria es 3.0.
+
+# Si el promedio de los dos parciales es menor a 2.0, el estudiante no puede presentar examen final y pierde la materia por bajo promedio, en este caso la nota definitiva es el promedio de los parciales, si el promedio es igual o superior a 2.0 puede presentar el examen final. 
+
+# Si la nota del examen final es inferior a 2.0, se desconoce (no se toma en cuenta) las notas de los parciales y la nota definitiva e…
+#  """
+# """ p1=int(input('digita el primer valor'))
+# p2=int(input('digita el segundo valor'))
+# prom=(p1+p2)/2
+# if prom<2:
+#     print ('pierde la asignatura por bajo promedio')
+# elif prom>=2:
+#     print('presenta examen final')
+#     examenFinal=float(input('digita el valor del examen'))
+#     defi=examenFinal
+#     print(f'reprobo{defi}')
+# else:
+#     if ef>=3.0
+
+# else:
+#     print('no presenta examen final') """
+
+# num1=int(input('digita el numero'))
+# num2=int(input('digita el numero'))
+# num3=int(input('digita el numero'))
+# if num1<=num2 and num1<=num3:
+#     print(f'{num1},{num2},{num3}')
+# elif num2>=num1 and num2<=num3:
+#     print(f'{num2},{num3},{num1}')
+# elif num3>=num1 and num3>=num2:
+#     print(f'{num3},{num2},{num1}')
+# elif num1<=num2 and num1<=num3:
+#     print(f'{num1},{num2},{num3}')
+# elif num2>=num1 and num2<=num3:
+#     print(f'{num2},{num3},{num1}')
+# elif num3>=num1 and num3>=num2:
+#     print(f'{num3},{num2},{num1}')
+
+
+añosemp=int(input('digita tiempo en la empresa'))
+estadocivil=int(input('''digita estado civil: 1.soltero 2.casad0'''))
+
+if estadocivil==1:
+    if añosemp>=1 and añosemp<=5:
+        bonificacion=(añosemp*2/100) 
+    elif añosemp>=5 and añosemp<=10:
+        bonificacion=(añosemp*2/100)
+    elif añosemp>=6 and añosemp<=10:
+        bonificacion=(añosemp*5/100)
+    elif añosemp>=10:
+        bonificacion=(añosemp*10/100)
+if estadocivil==2:
+    if añosemp>=5 and añosemp<=15:
+        bonificacion=(añosemp*5/100)
+    elif añosemp>=6 and añosemp<=10:
+        bonificacion=(añosemp*10/100)
+    elif añosemp>=10:
+        bonificacion=(añosemp*15/100)
+else:
+    bonificacion=0

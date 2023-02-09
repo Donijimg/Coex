@@ -1,0 +1,97 @@
+""" MISIÓN 3
+LISTAS (VECTORES Y MATRICES) EN PYTHON
+COEX es una entidad que tiene como misión capacitar jóvenes que desean
+adquirir conocimientos y habilidades en el área de programación. Al llegar a
+COEX, cada talento es registrado con un código y su nombre. Un grupo puede
+estar conformado una cantidad N de talentos. Durante el transcurso del
+módulo uno, se presentan y explican diferentes temáticas y cada talento
+realiza una misión, que es una prueba para medir como va su proceso. Cada
+misión, es puntuada con un valor entre 1 y 100. En total se realizan 3
+misiones. Al finalizar el módulo, se realizará una misión final, conocida como
+prueba de Nivel. Se les solicita a ustedes como talentos que han adquirido los
+conceptos y habilidades de programadores para que creen un programa que
+permita llevar a cabo los registros correspondientes al proceso. Se les solicita
+que el programa tenga un menú que:
+1. Solicite la cantidad N de talentos (solo se debe hacer una vez y no debe
+permitir hacer los otros hasta no haberla realizado)
+2. Registrar los datos de los talentos en una matriz 2xN (Código y Nombre)
+3. Registrar nota de Misión 1
+4. Registrar nota de Misión 2
+5. Registrar nota de Misión 3
+6. Registrar prueba de nivel final
+7. Mostrar nombre y nota del talento con la mejor nota en la Misión 1
+8. Mostrar nombre y nota del talento con la mejor nota en la Misión 2
+9. Mostrar nombre y nota del talento con la mejor nota en la Misión 3
+10.Mostrar el nombre y el promedio de cada talento (el promedio se obtiene
+de las 4 pruebas)
+11.Mostrar código, nombre, nota misión1, nota mision2 y nota misión 3, y
+prueba final
+12.Nombre de los talentos que desarrollaron el ejercicio
+13.Salir
+Se debe validar que la nota de cada talento esté entre 0 y 100, Se debe evitar
+que se repitan códigos al registrar estudiantes, Se debe validar que el nombre
+del talento no esté vacío """
+suma,promedio=0,0
+coex=[[],[],[],[],[],[]]
+opcion=0
+while opcion!=6:
+    opcion=int(input('''
+1. Solicite la cantidad N de talentos 
+2. Registrar los datos de los talentos en una matriz 2xN (Código y Nombre)
+3. Registrar nota de Misión 1
+4. Registrar nota de Misión 2
+5. Registrar nota de Misión 3
+6. Registrar prueba de nivel final
+7. Mostrar nombre y nota del talento con la mejor nota en la Misión 1
+8. Mostrar nombre y nota del talento con la mejor nota en la Misión 2
+9. Mostrar nombre y nota del talento con la mejor nota en la Misión 3
+10.Mostrar el nombre y el promedio de cada talento (el promedio se obtiene
+de las 4 pruebas)
+11.Mostrar código, nombre, nota misión1, nota mision2 y nota misión 3, y
+prueba final
+12.Nombre de los talentos que desarrollaron el ejercicio
+13.Salir
+digita una opcion '''))
+    match opcion:
+        case 1:
+            n=int(input('Solicito la cantidad de talentos: '))
+        case 2:
+            for i in range(n):
+                coex[0].append(input(f"esribe nombre del talento {i+1}: "))
+                coex[1].append(input(f"codigo {coex[0][i]}: "))
+        case 3:
+                coex[2]=float(input(f'digita mision 1:'))
+                while coex[2] < 0 or coex[2] > 5:
+                    print("Error")
+        case 4:
+                coex[3]=float(input(f'digita mision 2:'))
+                while coex[3] < 0 or coex[3] > 5:
+                    print("Error de rango.")
+        case 5:
+                coex[4]=float(input(f'digita mision 3:'))
+                while coex[4] < 0 or coex[4] > 5:
+                    print("Error de rango.")
+        # case 6:
+        #         coex[5] = float(input(f"dime tu nota final: "))
+        #         while coex[5] < 0 or coex[5] > 5:
+        #             print("Error de rango.")
+        case 7:
+                if(coex[2]>3.5):
+                    print(f'nombre{coex[0]},nota{coex[2]} mayor del promedio')
+                else:
+                    print(f'nombre{coex[0]},nota{coex[2]} menor del promedio')
+        case 8:
+                if(coex[3]>3.5):
+                    print(f'nombre{coex[0]},nota{coex[3]} mayor del promedio')
+                else:
+                    print(f'nombre{coex[0]},nota{coex[3]} menor del promedio')
+        case 9:
+                if(coex[4]>3.5):
+                    print(f'nombre{coex[0]},nota{coex[4]} mayor del promedio')
+                else:
+                    print(f'nombre{coex[0]},nota{coex[4]} menor del promedio')
+        case 10:
+                promedio =sum([2],[3],[4],[5]) / 4
+                # coex[] = promedio
+                # suma+=coex[5]
+                print(f'nombre{[0]},nota promedio{promedio}')

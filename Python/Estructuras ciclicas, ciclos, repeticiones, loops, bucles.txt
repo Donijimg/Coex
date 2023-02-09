@@ -1,0 +1,221 @@
+""" 
+numero=0
+reciduo=0
+binario=''
+numero=int(input('escribe un  numero '))
+while numero>0:
+    reciduo=numero%2
+    binario=str(reciduo)+binario
+    numero=numero//2
+print(f'binario{binario}') """
+
+""" num=0
+suma=0
+num=int(input('digite un numero :'))
+for i in range(num+1):
+    # suma=suma+i
+    suma+=i
+print(f'la sumaria es :{suma}')
+ """
+"""""pedir al usu un numero del 1 al 9 y mostrar la tabla de multipicar de dicho nuemro"""""
+
+""" num=0
+multiplicaion=0
+num=int(input('digite multiplo: '))
+for i in range (1,11):
+    print(f'los multiplos son :{num}*{i}={num*i}')
+ """
+ 
+""" for i in range (1,10):
+    for j in range (1,10):
+        print(f'{i}x{j}={i*j}')
+    print (' ') """
+
+""" for i in range (1,10):
+    if i>5:
+        break
+    print(i)
+ """
+
+"""realiza un programa que imprima 25 terminos de la serie 11 - 22 33 -44,etc.(no ingresar valores)"""
+""" yt=1
+yu=11
+while yt<25:
+    yt+=1
+    yu+=11
+    print(yu) """
+
+""" for i in range (8,500,8):
+    print(f'los multiplos son :{i}')
+ """
+
+""" x=8
+while x<=500:
+    print(x)
+    x+=8 """
+
+""" for i in range (10,0,-1):
+    print(f'{i}')
+ """
+""" i=10
+while i>0:
+    print(f'{i}')
+    i-=1 """
+
+""" numero1=int(input('escribe un  numero '))
+numero2=int(input('escribe un  numero '))
+if numero1<numero2:
+    for i in range(numero1,numero2+1):
+        if i%2==0:
+            print(i)
+elif numero1>numero2:
+    for i in range(numero1,numero2+1):
+if i%2==0:"""
+"""             print(i)
+ else:
+     print ('los numeros son iguales') """
+
+""" # x=0
+numero1=int(input('escribe un  numero '))
+numero2=int(input('escribe un  numero '))
+if numero1<numero2:
+     for i in range(numero1,numero2+1):
+         if i%2==0:
+             x+=1
+elif numero1>numero2:
+     for i in range(numero1,numero2+1):
+         if i%2==0:
+             x+=1
+ else:
+     print('los numeros son iguales')
+ print(f'cantidad de numeros {x}')"""
+
+"""realiza un programa que acumule (sume) valores ingresados por el teclado hasta ingresar el 9999(no sumar dicho valor, solamente indica que ha finalizado  la carga). imprimir el valor acumulado  e informar si dicho valor es cero, mayor a cero o menor a cero """
+"""num=0
+suma=0
+while num!=9999:
+    num=int(input('digita sifra'))
+    if num!=9999:
+        suma+=num
+
+if suma>0:
+    print('mayor a 0')
+elif suma<0:
+    print('menor que 0')
+else:
+    print('igual a 0')
+print(f'resulatado {suma}')
+ """
+""" for i in range(1,100,1):
+    if (i%2==0) and (i%3==0):
+        print(f'{i}')
+ """
+""" intentos=3
+clave=123456
+while intentos>0:
+    if clave>3:
+        print('no tiene mas intentos no puede acceder ala cuenta')   
+else: 
+    print('error')
+
+
+ """
+""" for i in range (1,101):
+    cont=0
+    for j in range (1,i+1):
+        if i%j==0:
+            cont+=1
+    if cont==2:
+        print (f' {i} ',end='')
+ """
+""" paso1,paso2,paso3,paso4=False,False,False,False
+acumulador=0
+opcion=0
+while opcion!=6:
+    opcion=int(input('''
+1. ingresa el nombre del estudiante 
+2. ingresa las notas del estudiante 
+3. mostrar la nota definitiva del estudiante
+4. mostrar si el estudiante aprobo o reprobo 
+5. mostrar el nombre del estudiante
+6. salir
+digita una opcion '''))
+    match opcion:
+        case 1:
+            nombre=input('digita el nombre del estudiante: ')
+            paso1=True
+        case 2:
+            if paso1==True:
+                for i in range(5):
+                    nota=-1
+                    while nota<0 or nota>5:
+                        nota=float(input(f'digita la {i+1}'))
+                    acumulador+=nota
+                definitiva=acumulador/5
+                paso2=True
+            else:
+                print('primero gestionar el paso1')
+        case 3:
+            if paso1==True and paso2==True:
+                print(definitiva)
+                paso3=True
+            else:
+                print('primero gestionar el paso1')
+        case 4:
+            if paso1==True and paso2==True and paso3==True:
+                if definitiva>=3.5:
+                    print('aprobo')
+                    estado='aprobo'
+                else:
+                    print('reprobo')
+                    estado='reprobo'
+                paso4=True
+            else:
+                print('primero gestionar el paso1,paso2,paso3')
+        case 5:
+            if paso1==True and paso2==True and paso3==True and paso4==True:
+                print(f'nombre: {nombre} definitiva: {definitiva} y estado: {estado} ',end='')
+            else:
+                print('primero gestionar el paso1,paso2,paso3') 
+        case 6:
+            break
+        case otro:
+            print('esta opcion no estsa disponible') """
+
+""" equi,isoc,esca,=0,0,0
+for i in range(4):
+    lado1,lados2,lados3=''
+lados1=int(input('digita la cantidad del lado de el triangulo: ' ))
+lados2=int(input('digita la cantidad del lado de el triangulo: ' ))
+lados3=int(input('digita la cantidad del lado de el triangulo: ' ))
+
+if 
+cantidadlados=
+cantidadsutipo=
+tipo=
+ """
+""" triangulo=1
+x=''
+while triangulo<=5:
+    x+=str(triangulo)
+    print(x)
+    triangulo+=1 """
+
+""" for i in range(1,6,):
+    for j in range(1,i+1):
+        print(j,end='')
+    print('') """
+
+""" x='54321'
+for i in range (5,0,-1):
+    print(x[0:i]) """
+
+""" divisor=float(input('divisor: '))
+dividendo=float(input('dividendo:'))
+cociente=dividendo
+i=0
+while cociente>dividendo:
+    cociente-=divisor
+    i+=1
+print(f'cociente: {i} y residuo: {dividendo-(divisor*i)}') """
+

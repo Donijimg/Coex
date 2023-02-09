@@ -1,0 +1,209 @@
+"""EJERCICIO DE ESTRUCTURA CÍCLICA (BUCLES)
+
+1. Sumar una cantidad N números MAYORES a 0 utilizando MIENTRAS."""
+#cantidadN = -1
+# suma = 0
+# while cantidadN != 0:
+#     cantidadN=int(input('digita cantidad de N: '))
+#     suma+=cantidadN
+#     print(suma)
+
+"""2. Imprimir números aleatorios en el rango de 0 a 10 mientras el número no sea igual a cero."""
+
+# import random
+# x=-1
+# while x!=0:
+#     x= random.randint(0,10)
+#     if(x!=0):
+#         print(x)
+
+"""3. Imprimir 20 números aleatorios en el rango de 1 a 1000."""
+
+# import random
+# for alternar in range(1,21):
+#     print(random.randint(1,1000))
+
+"""4. Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla
+todos los números impares desde 1 hasta ese número."""
+# numeroentero=int(input('digita un numero positivo: '))
+# if numeroentero>0:
+#     for i in range(1,numeroentero+1,2):
+#         print (i)
+#     print("")
+# else:
+#     print('error')
+
+"""5. Una persona debe realizar un muestreo con 20 personas para determinar el promedio de peso
+de los niños, jóvenes, adultos y viejos que existen en su zona habitacional. Se determinan las
+categorías con base en la sig.,
+tabla:
+CATEGORIA EDAD
+Niños 0 - 12
+
+Jóvenes 13 - 29
+
+Adultos 30 - 59
+
+Viejos 60 en adelante"""
+
+# cninos,cjovenes,cadultos,cviejos=0,0,0,0
+# ninos,jovenes,adultos,viejos=0,0,0,0
+# for i in range (5):
+#     edad=int(input(f'digita edad {i}: '))
+#     peso=float(input(f'digita peso {i}: '))
+#     while edad<0 or peso<=0:
+#         print ('error')
+#         edad=int(input(f'digita edad {i}: '))
+#         peso=float(input(f'digita peso {i}: '))
+#     if edad>0 and edad<=12:
+#         cninos+=1
+#         ninos+=peso
+#     elif edad>=13 and edad<=29:
+#         cjovenes+=1
+#         jovenes+=peso
+#     elif edad>=30 and edad<=59:
+#         cadultos+=1
+#         adultos+=peso
+#     else:
+#         cviejos+=1
+#         viejos+=peso
+# if ninos>0:
+#     ninos>0
+# if jovenes>0:
+#     jovenes>0
+# if adultos>0:
+#     adultos>0
+# if viejos>0:
+#     viejos>0
+# print(f'repuestas: ninos: {cninos/ninos} jovenes: {cjovenes/jovenes} adultos: {cadultos/adultos} viejos: {cviejos/viejos}')
+
+"""6. Diseñen un algoritmo que imprima la siguiente secuencia:
+1.1.1 - 1.1.2 - 1.1.3 - 1.1.4
+1.2.1 - 1.2.2 - 1.2.3 - 1.2.4
+1.3.1 - 1.3.2 - 1.3.3 - 1.3.4
+1.4.1 - 1.4.2 - 1.4.3 - 1.4.4
+1.5.1 - 1.5.2 - 1.5.3 - 1.5.4"""
+
+# D=0
+# J=0
+# print('algorimo: ')
+# for J in range (1,6):
+#     for D in range (1,5):
+#         if(D<4):
+#             print(f'1.{J}.{D}',"-")
+#         else:
+#             print(f'1.{J}.{D}')
+#         print("")
+
+""" 7. Un Zoólogo pretende determinar el porcentaje de animales que hay en las siguientes tres
+categorías de edades: de 0 a 1 año, de más de 1 año y menos de 3 y de 3 o más años. El
+zoológico todavía no está seguro del animal que va a estudiar. Si se decide por elefantes solo
+tomara una muestra de 20 de ellos; si se decide por las jirafas, tomara 15 muestras, y si son
+chimpancés tomara 40."""
+# edadRango1, edadRango2, edadRango3 = 0, 0, 0
+
+# animal=(input('digita el animal (elefantes, jirafas o chimpances): '))
+# match animal:
+#     case 'elefantes':
+#         for i in range (0,21):
+#             edad=int(input('digita el edad'))
+#             if edad>=0 and edad<=1:
+#                 edadRango1+=1
+#             elif edad>1 and edad <3:
+#                 edadRango2+=1
+#             elif edad>=3:
+#                 edadRango3+=1
+#             else:
+#                 print('error')
+#         print(f'edadRango 0 a 1 es: {edadRango1*100/i} edadRango 1 a 3 es: {edadRango2*100/i} edadRango mas de 3 es: {edadRango3*100/i}')
+#     case 'jirafas':
+#         for c in range (0,16):
+#             edad=int(input('digita el edad'))
+#             if edad>=0 and edad<=1:
+#                 edadRango1+=1
+#             elif edad>1 and edad<3:
+#                 edadRango2+=1
+#             elif edad>=3:
+#                 edadRango3+=1
+#             else:
+#                 print('error')
+#         print(f'edadRango 0 a 1 es: {edadRango1*100/c} edadRango 1 a 3 es: {edadRango2*100/c} edadRango mas de 3 es: {edadRango3*100/c}')
+#     case 'chimpances':
+#         for x in range (0,41):
+#             edad=int(input('digita el edad'))
+#             if edad>=0 and edad<=1:
+#                 edadRango1+=1
+#             elif edad>1 and edad<3:
+#                 edadRango2+=1
+#             elif edad>=3:
+#                 edadRango3+=1
+#             else:
+#                 print('error')
+#         print(f'edadRango 0 a 1 es: {edadRango1*100/x} edadRango 1 a 3 es: {edadRango2*100/x} edadRango mas de 3 es: {edadRango3*100/x}')
+
+"""
+8. Una compañía de seguros tiene contratados a una cantidad N vendedores. Cada vendedor
+hace tres ventas a la semana. Su política de pagos es que un vendedor recibe un sueldo base, y
+además un 10% extra por comisiones del total de sus ventas. El gerente de la compañía desea
+saber cuánto dinero recibirá cada vendedor en una semana por concepto de comisiones por
+las ventas, y cuanto será el total tomando en cuenta su sueldo base y sus comisiones."""
+
+# emplea=int(input('numero de empleados: '))
+# for y in range (1,emplea+1):
+#     salario=0
+#     monto=0
+#     salario=float(input(f'digita el sueldo del empleado {y}: '))
+#     while salario<0:
+#         print('error')
+#         salario=float(input(f'digita el sueldo del empleado {y}: '))
+#     for x in range (1,4):
+#         venta=float(input(f'digita venta {x} del empleado {y}: '))
+#         while venta<0:
+#             print('error')
+#             venta=float(input(f'digita venta {x} del empleado {y}: '))
+#         monto+=venta
+#     comision = monto*10/100
+#     salarioTotal = salario + comision
+#     print(f'Comision: {comision} y sueldo total: {salarioTotal}')
+    
+""""9. Una agencia de venta de autos paga a su personal de ventas un salario de $950.000, más una
+comisión de $170.000 por cada auto vendido, y también un 5% extra del valor total de las
+ventas. Diseñar un algoritmo para calcular el salario de un vendedor en un determinado mes,
+realizando la lectura por pantalla del nº de automóviles vendidos y el valor de cada auto para
+hallar el monto total de ventas."""
+
+
+# sueldo=950000
+# monto=0
+# comision=170000
+# autosVendidos = int(input("Escribir e número de autos vendidos"))
+# for x in range (1,autosVendidos+1):
+#     venta=float(input(f'digita venta {x} del auto vendido: '))
+#     while venta<0:
+#         print('error')
+#         venta=float(input(f'digita venta {x} del auto vendido: '))
+#     monto+=venta
+# sueldoTotal = sueldo + (comision*autosVendidos) + (monto*5/100)
+# print(f'Sueldo total: {sueldoTotal}')
+
+"""10. Hallar el promedio de calificaciones de un estudiante, teniendo en cuenta el nombre estudiante
+y 5 notas; calculando la nota final de acuerdo a los siguientes porcentajes: Dos (2) notas valen
+el 40% y las otras tres (3) valen el 60%"""
+
+# porcen40,porcen60=0.0,0.0
+# estudiante=input('digita nombre del estudiante: ')
+# for p in range (1,6):
+#     if (p<3):
+#         porcen=float(input(f'digita tu nota {p}: '))
+#         while porcen<0 and porcen>=5:
+#             print('error')
+#             porcen=float(input(f'digita tu nota {p}: '))
+#         porcen40+=porcen
+#     else:
+#         porcen=float(input(f'digita tu nota {p}: '))
+#         while porcen<0 and porcen>=5:
+#             print('error')
+#             porcen=float(input(f'digita tu nota {p}: '))
+#         porcen60+=porcen
+# print(f'nombre: {estudiante} nota final {((porcen40/2)*40/100)+((porcen60/3)*60/100)}')
+   

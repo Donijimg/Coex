@@ -1,0 +1,50 @@
+
+# ("1)Evaluar las siguientes expresiones para A = 2, B = 5 y C=1")
+# A=2
+# B=5
+# C=1
+# operacion1=(3*A-4*B/A**2)
+# print('resultado de la exprecion es',operacion1)
+# operacion2=((((B+C)/2*A+10)*3*B)-6) 
+# print('resultado de la exprecion es',operacion2)
+
+# ("2)Un individuo desea invertir su capital en un banco y desea saber cuánto dinero ganará después de un mes si el banco paga a razón de 1,2% mensual.")
+# capital=float(input("incerte capital"))
+# print(f'ganacias del mes {capital*1.2/100}')
+
+# ("3 Calcule el área de un triángulo y muestre su resultado.")
+# base=float(input('digita la medicion de la base'))
+# altura=float(input('digita la medicion de la altura'))
+# print(f'el area seria {base*altura/2}')
+
+# ("4 Una agencia de venta de autos paga a su personal de ventas un salario de $980.000, más una comisión de $170.000 por auto vendido, más un 5% del valor de venta. Diseñar un algoritmo para calcular el salario de un vendedor en un determinado mes, conociendo el nº de automóviles vendidos y el total del monto de ventas.")
+
+# ("DATOS")
+# autos=float(input('digita un numero'))
+# ventas=float(input('digita monto de venta'))
+# comision=170.000*autos
+# masun=5/100
+# print(f"comisiona mensual{comision*masun}")
+
+# """ """ ("5 Hallar el promedio de calificaciones, teniendo en cuenta que el estudiante tiene 4 notas decimales; dos notas valen el 40% y las otras dos valen el 60%.")
+# calif1=float(input('digita la nota 1 del 40%: '))
+# calif2=float(input('digita la nota 2 del 40%: '))
+# calif3=float(input('digita la nota 1 del 60%: '))
+# calif4=float(input('digita la nota 2 del 60%: '))
+# promedio=(((calif1+calif2)/2)*40/100) + (((calif3+calif4)/2)*60/100)
+# print(f'promedio del estudiante {promedio}') """
+# """ 
+# ("6 Calcular el número de pulsaciones que una persona debe tener por cada 10 segundos de ejercicio, si la fórmula es: num. pulsaciones = (220 - edad)/10")
+# edad=float(input('escribe la edad: '))
+# print(f'pulsasiones del individuo: {(220-edad)/10}') """
+
+# ("7 Un vendedor recibe un sueldo base, más un 10% extra por comisión de sus ventas, el vendedor desea saber cuánto dinero obtendrá por concepto de comisiones por las tres (3) ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.")
+# sueldoBase=float(input('sueldo base'))
+# venta1=float(input('primera venta'))
+# venta2=float(input('segunda venta'))
+# venta3=float(input('tercera venta'))
+# comisiones=(venta1+venta2+venta3)*10/100
+# sueldoCompleto= comisiones+sueldoBase
+# print(f'valor de comisiones {comisiones} y sueldo total {sueldoCompleto}')
+ 
+ 

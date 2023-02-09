@@ -1,0 +1,64 @@
+
+'''MISIÓN 2 USO DE CONDICIONALES
+
+En la escuela Pequeños Brocolitos, se desea registrar y calcular la nota
+de cada estudiante. Para calcular la nota definitiva de un estudiante y
+saber si aprueba, se toma en cuenta las notas de la siguiente manera:
+
+• El promedio de las notas de 3 Exámenes que corresponde al 55%
+• El promedio de las notas de 2 Trabajos que corresponde al 15%
+• La nota del examen final que será el 20%
+• El promedio de la nota de autoevaluación y heteroevaluación realizada
+
+por el estudiante y el profesor respectivamente que será del 10%.
+Realice un programa que permita registrar las notas que deben estar en
+un rango de 0-5. En caso de que una de las notas, se encuentre por
+fuera de este rango, se debe mostrar un mensaje que indique error.
+Luego, debe evaluar, según la nota definitiva obtenida por el estudiante,
+e informar el nivel en el que se encuentra y si aprueba el curso.
+Para aprobar el curso la nota definitiva debe ser igual o superior a 3.
+Los niveles que los estudiantes pueden alcanzar son los siguientes:
+
+Nivel Rango
+Superior 4.7 a 5.0
+Alto 4.0 a 4.6
+Básico 3.0 a 3.9
+Bajo 2.0 a 2.9
+Muy bajo 0 a 1.9
+
+Evalúe los requerimientos de la situación planteada y determine las
+variables y operaciones y condicionales requeridas para dar solución al
+mismo y escriba él código.'''
+
+examen1=float(input('digita la nota del examen 1'))
+examen2=float(input('digita la nota del examen 2'))
+examen3=float(input('digita la nota del examen 3'))
+trabajo1=float(input('digita la nota del trabajo 1'))
+trabajo2=float(input('digita la nota del trabajo 2'))
+autoevaluacion=float(input('digita la nota de la autoevalucion del estudiante'))
+heteroevaluacion=float(input('digita la nota de la de tu heteroevaluacion'))
+examenfinal=float(input('digita la nota de la evalucion final'))
+
+promediodeexamenes=(((examen1+examen2+examen3)/3)*55/100)
+promediodetrabajos=(((trabajo1+trabajo2)/2)*15/100)
+promediodelexamenfinal=(((examenfinal)/1)*20/100)
+promedioevaluacion=(((autoevaluacion+heteroevaluacion)/2)*10/100)
+notadefinitiva=(promediodeexamenes+promediodetrabajos+promediodelexamenfinal+promedioevaluacion)
+if (notadefinitiva>=1.0 and notadefinitiva<=5.0):
+    if notadefinitiva<3.0:
+        print ('reprobo el area')
+    if notadefinitiva>=3.0:
+        print ('aprobo el area')
+        if (notadefinitiva>=4.7 and notadefinitiva<=5.0):
+            print ('superior')
+        if (notadefinitiva>=4.0 and notadefinitiva<=4.6):
+            print ('alto')
+        if (notadefinitiva>=3.0 and notadefinitiva<=3.9):
+            print ('basico')
+        if (notadefinitiva>=2.0 and notadefinitiva<=2.9):
+            print ('bajo')
+        if (notadefinitiva>0 and notadefinitiva<=1.9):
+            print ('muy bajo')
+            if (notadefinitiva>5.0):
+                print("Error")
+print(F'tu nota definitiva es{notadefinitiva}')
