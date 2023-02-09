@@ -1,0 +1,5 @@
+cat g5.txt
+ls
+pwd
+ pwd
+master
